@@ -3,7 +3,7 @@ from generate_ideas import generate_business_ideas
 from twitter import post_to_twitter
 
 def main():
-    abstracts = fetch_recent_papers(past_days=3)
+    abstracts = fetch_recent_papers(past_days=1)
     ideas = generate_business_ideas(abstracts)
     post_to_twitter(ideas)
 
